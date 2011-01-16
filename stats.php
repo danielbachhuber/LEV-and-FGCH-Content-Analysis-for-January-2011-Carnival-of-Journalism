@@ -42,6 +42,36 @@ if ( !isset( $total_post_count_lev ) ) {
 	$result = mysql_query( $query );
 }
 
+// Calculation: total unique authors from the FGCH blog
+if ( !isset( $total_unique_authors_fgch ) ) {
+	$query = "SELECT DISTINCT posts_to_authors.author, posts_to_authors.author_type FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='fort-greene';";
+	$total_unique_authors_fgch = mysql_num_rows( mysql_query( $query ) );
+	$stat = 'total_unique_authors_fgch';
+	$value = $total_unique_authors_fgch;
+	$query = sprintf( "INSERT INTO stats( stat, value ) VALUES ( '$stat', '%s' );", mysql_real_escape_string( $value ) );
+	$result = mysql_query( $query );
+}
+
+// Calculation: total staff authors from the FGCH blog
+if ( !isset( $total_staff_authors_fgch ) ) {
+	$query = "SELECT DISTINCT posts_to_authors.author, posts_to_authors.author_type FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='fort-greene' AND posts_to_authors.author_type='CUNY J-School';";
+	$total_staff_authors_fgch = mysql_num_rows( mysql_query( $query ) );
+	$stat = 'total_staff_authors_fgch';
+	$value = $total_staff_authors_fgch;
+	$query = sprintf( "INSERT INTO stats( stat, value ) VALUES ( '$stat', '%s' );", mysql_real_escape_string( $value ) );
+	$result = mysql_query( $query );
+}
+
+// Calculation: total other authors from the FGCH blog
+if ( !isset( $total_other_authors_fgch ) ) {
+	$query = "SELECT DISTINCT posts_to_authors.author, posts_to_authors.author_type FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='fort-greene' AND posts_to_authors.author_type!='CUNY J-School';";
+	$total_other_authors_fgch = mysql_num_rows( mysql_query( $query ) );
+	$stat = 'total_other_authors_fgch';
+	$value = $total_other_authors_fgch;
+	$query = sprintf( "INSERT INTO stats( stat, value ) VALUES ( '$stat', '%s' );", mysql_real_escape_string( $value ) );
+	$result = mysql_query( $query );
+}
+
 // Calculation: total unique authors from the LEV blog
 if ( !isset( $total_unique_authors_lev ) ) {
 	$query = "SELECT DISTINCT posts_to_authors.author, posts_to_authors.author_type FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='eastvillage';";
