@@ -5,6 +5,17 @@
 * LEV: 100
 * FGCH: 105
 
+= What percentage of the total posts are from staff vs. community contributors? =
+
+= How many unique authors? What percentage are internal vs. external? =
+
+= What was the average publication time? =
+
+= On average, how many internal and external links did each post have? What was the most and least? =
+
+= How many total different websites were linked to? Which websites were most commonly linked to? =
+
+
 == Questions to answer with research ==
 
 = For each publication, what is the coverage area in terms of blocks and # of people? =
