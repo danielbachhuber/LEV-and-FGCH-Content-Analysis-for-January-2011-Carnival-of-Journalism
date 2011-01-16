@@ -1,0 +1,38 @@
+
+QUESTIONS TO ANSWER WITH DATA ANALYSIS
+
+How many total posts in November 2010?
+* LEV: 100
+* FGCH: 105
+
+What percentage of the total posts are from staff vs. community contributors?
+
+How many unique authors? What percentage are internal vs. external?
+
+What was the average publication time?
+
+On average, how many internal and external links did each post have? What was the most and least?
+
+How many total different websites were linked to? Which websites were most commonly linked to?
+
+
+QUESTIONS TO ANSWER WITH RESEARCH
+
+When did each publication launch?
+* LEV: September 13, 2010
+* FGCH: ?
+
+For each publication, what is the coverage area in terms of blocks and # of people? =
+
+
+QUESTIONS FOR THE EDITORS
+
+How many people did you have on your staff in November 2010?
+
+What percentage of total story ideas do you think were you able to cover?
+
+What were the most important stories of November 2010?
+
+What do you think are the most important topics/stories affecting your community now?
+
+Is there any specific type of analysis you’d like me to do on your website?
