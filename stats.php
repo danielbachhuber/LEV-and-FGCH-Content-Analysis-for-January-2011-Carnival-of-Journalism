@@ -32,6 +32,16 @@ if ( !isset( $total_post_count_ftg ) ) {
 	$result = mysql_query( $query );
 }
 
+// Calculation: total number of posts from LEV blog
+if ( !isset( $total_post_count_lev ) ) {
+	$query = "SELECT post_id FROM original_posts WHERE publication='eastvillage';";
+	$total_post_count_lev = mysql_num_rows( mysql_query( $query ) );
+	$stat = 'total_post_count_lev';
+	$value = $total_post_count_lev;
+	$query = sprintf( "INSERT INTO stats( stat, value ) VALUES ( '$stat', '%s' );", mysql_real_escape_string( $value ) );
+	$result = mysql_query( $query );
+}
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -58,6 +68,18 @@ if ( !isset( $total_post_count_ftg ) ) {
 		<div class="main">
 			
 			<h3>The Local Fort Greene-Clinton Hill and The Local East Village comparison</h3>
+			
+			<table>
+				<tr>
+					<th>Stat</th>
+					<th>The Local Fort Greene-Clinton Hill</th>
+					<th>The Local East Village</th>
+				</tr>
+				<tr>
+					<td>Total number of posts in November 2010</td>
+					<td><?php echo $total_post_count_ftg; ?></td>
+					<td><?php echo $total_post_count_lev; ?></td>
+			</table>
 			
 		</div>
 	</div>

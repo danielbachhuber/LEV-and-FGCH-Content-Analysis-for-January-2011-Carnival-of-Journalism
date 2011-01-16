@@ -8,3 +8,25 @@ body, html {
 	margin-right: auto;
 	width: 860px;
 }
+
+/**
+ * Element: h3
+ */
+
+.main h3 {
+	text-align: center;
+}
+
+.main table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main table th {
+	text-align: left;
+}
+
+.main table th, .main table td {
+	width: 250px;
+	margin: 10px;
+}
