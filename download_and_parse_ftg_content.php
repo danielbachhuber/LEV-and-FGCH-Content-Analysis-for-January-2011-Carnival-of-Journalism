@@ -2,9 +2,6 @@
 
 include_once( 'config.php' );
 
-// Connect to the database
-$connection = mysql_connect( DB_HOST, DB_USER, DB_PASSWORD ) or die( 'Error connecting to database' );
-mysql_select_db( DB_NAME );
 echo "\nStarting the scraping process\n";
 
 $base_url = 'http://eastvillage.thelocal.nytimes.com/2010/11/';
