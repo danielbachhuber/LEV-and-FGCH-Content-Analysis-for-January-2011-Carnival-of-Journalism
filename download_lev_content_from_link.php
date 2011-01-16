@@ -1,9 +1,6 @@
 <?php
 
-define('DB_NAME', 'locals_2010_analysis');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'root');
-define('DB_HOST', ':/Applications/MAMP/tmp/mysql/mysql.sock');
+include_once( 'config.php' );
 
 // Connect to the database
 $connection = mysql_connect( DB_HOST, DB_USER, DB_PASSWORD ) or die( 'Error connecting to database' );
