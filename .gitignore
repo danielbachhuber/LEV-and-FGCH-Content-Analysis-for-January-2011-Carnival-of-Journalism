@@ -1,0 +1,3 @@
+config.php
+# Magpie RSS generates a cache folder we can ignore
+/cache
