@@ -1,0 +1,23 @@
+
+== Questions to answer with data analysis ==
+
+= How many total posts in November 2010? =
+* LEV: 100
+* FGCH: 105
+
+== Questions to answer with research ==
+
+= For each publication, what is the coverage area in terms of blocks and # of people? =
+
+
+== Questions for the editors ==
+
+= How many people did you have on your staff in November 2010? =
+
+= What percentage of total story ideas do you think were you able to cover? =
+
+= What were the most important stories of November 2010? =
+
+= What do you think are the most important topics/stories affecting your community now? =
+
+= Is there any specific type of analysis you’d like me to do on your website? =
