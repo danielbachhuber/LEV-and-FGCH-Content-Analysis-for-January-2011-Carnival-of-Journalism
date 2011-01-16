@@ -2,18 +2,21 @@
 QUESTIONS TO ANSWER WITH DATA ANALYSIS
 
 How many total posts in November 2010?
-* LEV: 100
-* FGCH: 105
+* LEV: 100 posts
+* FGCH: 105 posts
 
 What percentage of the total posts are from staff vs. community contributors?
 
 How many unique authors? What percentage are internal vs. external?
+* LEV: 48 unique authors; 29 authors from "20 Cooper Square" and 19 from elsewhere
 
 What was the average publication time?
 
 On average, how many internal and external links did each post have? What was the most and least?
 
 How many total different websites were linked to? Which websites were most commonly linked to?
+
+How many sources (named, referenced, or otherwise) does each post have?
 
 
 QUESTIONS TO ANSWER WITH RESEARCH

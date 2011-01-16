@@ -23,11 +23,11 @@ extract( $stats );
 // Generate the stats if they don't yet exist
 
 // Calculation: total number of posts from Fort Greene blog
-if ( !isset( $total_post_count_ftg ) ) {
+if ( !isset( $total_post_count_fgch ) ) {
 	$query = "SELECT post_id FROM original_posts WHERE publication='fort-greene';";
-	$total_post_count_ftg = mysql_num_rows( mysql_query( $query ) );
-	$stat = 'total_post_count_ftg';
-	$value = $total_post_count_ftg;
+	$total_post_count_fgch = mysql_num_rows( mysql_query( $query ) );
+	$stat = 'total_post_count_fgch';
+	$value = $total_post_count_fgch;
 	$query = sprintf( "INSERT INTO stats( stat, value ) VALUES ( '$stat', '%s' );", mysql_real_escape_string( $value ) );
 	$result = mysql_query( $query );
 }
@@ -38,6 +38,36 @@ if ( !isset( $total_post_count_lev ) ) {
 	$total_post_count_lev = mysql_num_rows( mysql_query( $query ) );
 	$stat = 'total_post_count_lev';
 	$value = $total_post_count_lev;
+	$query = sprintf( "INSERT INTO stats( stat, value ) VALUES ( '$stat', '%s' );", mysql_real_escape_string( $value ) );
+	$result = mysql_query( $query );
+}
+
+// Calculation: total unique authors from the LEV blog
+if ( !isset( $total_unique_authors_lev ) ) {
+	$query = "SELECT DISTINCT posts_to_authors.author, posts_to_authors.author_type FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='eastvillage';";
+	$total_unique_authors_lev = mysql_num_rows( mysql_query( $query ) );
+	$stat = 'total_unique_authors_lev';
+	$value = $total_unique_authors_lev;
+	$query = sprintf( "INSERT INTO stats( stat, value ) VALUES ( '$stat', '%s' );", mysql_real_escape_string( $value ) );
+	$result = mysql_query( $query );
+}
+
+// Calculation: total staff authors from the LEV blog
+if ( !isset( $total_staff_authors_lev ) ) {
+	$query = "SELECT DISTINCT posts_to_authors.author, posts_to_authors.author_type FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='eastvillage' AND posts_to_authors.author_type='20 Cooper Square';";
+	$total_staff_authors_lev = mysql_num_rows( mysql_query( $query ) );
+	$stat = 'total_staff_authors_lev';
+	$value = $total_staff_authors_lev;
+	$query = sprintf( "INSERT INTO stats( stat, value ) VALUES ( '$stat', '%s' );", mysql_real_escape_string( $value ) );
+	$result = mysql_query( $query );
+}
+
+// Calculation: total other authors from the LEV blog
+if ( !isset( $total_other_authors_lev ) ) {
+	$query = "SELECT DISTINCT posts_to_authors.author, posts_to_authors.author_type FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='eastvillage' AND posts_to_authors.author_type!='20 Cooper Square';";
+	$total_other_authors_lev = mysql_num_rows( mysql_query( $query ) );
+	$stat = 'total_other_authors_lev';
+	$value = $total_other_authors_lev;
 	$query = sprintf( "INSERT INTO stats( stat, value ) VALUES ( '$stat', '%s' );", mysql_real_escape_string( $value ) );
 	$result = mysql_query( $query );
 }
