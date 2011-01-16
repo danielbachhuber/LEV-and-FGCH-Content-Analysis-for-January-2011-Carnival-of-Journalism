@@ -18,6 +18,10 @@
 
 == Questions to answer with research ==
 
+= When did each publication launch? =
+* LEV: September 13, 2010
+* FGCH: ?
+
 = For each publication, what is the coverage area in terms of blocks and # of people? =
 
 
