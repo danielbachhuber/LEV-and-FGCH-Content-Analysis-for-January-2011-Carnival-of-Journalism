@@ -15,6 +15,8 @@ How many words were written on each blog? How long on average are the posts? How
 
 On average, how many links did each post have? What was the most and the least? How many internal versus how many external?
 
+Calculate the most popular topics for staff vs. community contributor posts based on tags applied to posts
+
 On average, how many comments did each post have? How many comments did each commenter have? Who was the most prolific commenter?
 
 How many total different websites were linked to? Which websites were most commonly linked to?
