@@ -16,3 +16,11 @@ SELECT DISTINCT posts_to_authors.post_id FROM posts_to_authors, original_posts W
 What number of LEV posts were written by community contributors?
 
 SELECT DISTINCT posts_to_authors.post_id FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='eastvillage' AND posts_to_authors.author_type!='20 Cooper Square';
+
+How many total words were written on the LEV?
+
+SELECT SUM(word_count) FROM original_posts WHERE publication="eastvillage";
+
+How many total words were written on FGCH?
+
+SELECT SUM(word_count) FROM original_posts WHERE publication="fort-greene";
