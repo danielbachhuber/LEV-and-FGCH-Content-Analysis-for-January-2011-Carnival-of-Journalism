@@ -17,18 +17,17 @@ What number of LEV posts were written by community contributors?
 
 SELECT DISTINCT posts_to_authors.post_id FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='eastvillage' AND posts_to_authors.author_type!='20 Cooper Square';
 
-How many total words were written on the LEV?
+How many total words were written on the LEV? How many words were written on average on the LEV? How many words on average were written by staffers? How many words on average were written by community contributors?
 
 SELECT SUM(word_count) FROM original_posts WHERE publication="eastvillage";
+SELECT AVG(word_count) FROM original_posts WHERE publication="eastvillage";
+SELECT AVG(word_count) FROM original_posts WHERE publication="eastvillage" AND author_type LIKE "%20 Cooper Square%";
+SELECT AVG(word_count) FROM original_posts WHERE publication="eastvillage" AND author_type NOT LIKE "%20 Cooper Square%";
 
-How many total words were written on FGCH?
+How many total words were written on FGCH? How many words were written on average on FGCH? How many words on average were written by staffers? How many words on average were written by community contributors?
 
 SELECT SUM(word_count) FROM original_posts WHERE publication="fort-greene";
-
-How many words were written on average on the LEV?
-
-SELECT AVG(word_count) FROM original_posts WHERE publication="eastvillage";
-
-How many total words were written on FGCH?
-
 SELECT AVG(word_count) FROM original_posts WHERE publication="fort-greene";
+SELECT AVG(word_count) FROM original_posts WHERE publication="fort-greene" AND author_type LIKE "CUNY J-School";
+SELECT AVG(word_count) FROM original_posts WHERE publication="fort-greene" AND author_type NOT LIKE "CUNY J-School";
+

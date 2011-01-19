@@ -10,8 +10,8 @@ How many unique authors? What number are from staff vs. community contributors?
 * FGCH: 46 unique authors; 23 authors from "CUNY J-School" and 23 are community contributors
 
 How many words were written on each blog? How long on average are the posts? How does that number vary from staff to community contributors?
-* LEV: 46,289 words; 463 words on average
-* FGCH: 46,945 words; 447 words on average
+* LEV: 46,289 words; 463 words on average; 557 words on average from "20 Cooper Square" and 369 words on average from community contributors
+* FGCH: 46,945 words; 447 words on average; 351 words on average from "CUNY J-School" and 610 words on average from community contributors
 
 On average, how many links did each post have? What was the most and the least? How many internal versus how many external?
 
