@@ -1,0 +1,18 @@
+
+DUMP 6
+
+What number of FGCH posts were written by staff?
+
+SELECT DISTINCT posts_to_authors.post_id FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='fort-greene' AND posts_to_authors.author_type='CUNY J-School';
+
+What number of FGCH posts were written by community contributors?
+
+SELECT DISTINCT posts_to_authors.post_id FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='fort-greene' AND posts_to_authors.author_type!='CUNY J-School';
+
+What number of LEV posts were written by staff?
+
+SELECT DISTINCT posts_to_authors.post_id FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='eastvillage' AND posts_to_authors.author_type='20 Cooper Square';
+
+What number of LEV posts were written by community contributors?
+
+SELECT DISTINCT posts_to_authors.post_id FROM posts_to_authors, original_posts WHERE posts_to_authors.post_id=original_posts.post_id AND original_posts.publication='eastvillage' AND posts_to_authors.author_type!='20 Cooper Square';

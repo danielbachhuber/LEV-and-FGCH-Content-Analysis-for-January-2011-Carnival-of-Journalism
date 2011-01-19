@@ -2,12 +2,12 @@
 QUESTIONS TO ANSWER WITH DATA ANALYSIS
 
 How many total posts in November 2010? What number are from staff vs. community contributors?
-* LEV: 100 posts
-* FGCH: 105 posts
+* LEV: 100 posts; 67 posts from "20 Cooper Square" and 33 from community contributors
+* FGCH: 105 posts; 69 posts from "CUNY J-School" and 36 from community contributors
 
 How many unique authors? What number are from staff vs. community contributors?
-* LEV: 48 unique authors; 29 authors from "20 Cooper Square" and 19 from elsewhere
-* FGCH: 46 unique authors; 23 authors from "CUNY J-School" and 23 from elsewhere
+* LEV: 48 unique authors; 29 authors from "20 Cooper Square" and 19 are community contributors
+* FGCH: 46 unique authors; 23 authors from "CUNY J-School" and 23 are community contributors
 
 How long on average are the posts? What number are from staff vs. community contributors?
 
