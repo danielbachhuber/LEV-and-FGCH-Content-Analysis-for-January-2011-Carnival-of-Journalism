@@ -24,3 +24,11 @@ SELECT SUM(word_count) FROM original_posts WHERE publication="eastvillage";
 How many total words were written on FGCH?
 
 SELECT SUM(word_count) FROM original_posts WHERE publication="fort-greene";
+
+How many words were written on average on the LEV?
+
+SELECT AVG(word_count) FROM original_posts WHERE publication="eastvillage";
+
+How many total words were written on FGCH?
+
+SELECT AVG(word_count) FROM original_posts WHERE publication="fort-greene";
