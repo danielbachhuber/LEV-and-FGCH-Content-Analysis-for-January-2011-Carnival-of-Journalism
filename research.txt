@@ -17,13 +17,25 @@ On average, how many comments did each post have? How many unique commenters for
 * LEV: 0.8 comments on average; 80 unique commenter usernames; John Penley had 3 comments, followed by "Mojo" (2 comments) and "chris" (2 comments)
 * FGCH: 4.5 comments on average; 303 unique commenter usernames; Joe Gonzalez had 13 comments, followed by "Kim W." (9 comments), Bonita Applebum (7 comments), and "catlady" (6 comments)
 
-On average, how many links did each post have? What was the most and the least? How many internal versus how many external?
+How many posts appeared in each category (greatest to least)?
+* LEV: Life (52), News (35), Culture (5), About The Local (3), Developing Story (2), First Person (2)
+* FGCH: FG/CH News (54), The Stoop (15), Get Out (14), Locals (11), Offspring (5), IMHO (4)
 
-Calculate the most popular topics for staff vs. community contributor posts based on tags applied to posts
+On average, how many links did each post have? What was the most and the least? How many internal versus how many external?
+* LEV:
+* FGCH:
 
 How many total different websites were linked to? Which websites were most commonly linked to?
+* LEV:
+* FGCH:
+
+Calculate the most popular topics for staff vs. community contributor posts based on tags applied to posts
+* LEV:
+* FGCH:
 
 What was the average publication time?
+* LEV:
+* FGCH:
 
 How many sources (named, referenced, or otherwise) does each post have?
 

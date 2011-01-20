@@ -44,3 +44,11 @@ On average, how many comments did each FGCH post have? How many unique commenter
 SELECT AVG(comment_count) FROM original_posts WHERE publication="fort-greene";
 SELECT DISTINCT COUNT(*) FROM posts_to_comments WHERE comment_link LIKE '%//fort-greene%';
 SELECT comment_author, COUNT(*) FROM posts_to_comments WHERE comment_link LIKE '%//fort-greene%' GROUP BY comment_author;
+
+How many posts appeared in each category on the LEV (greatest to least)?
+
+SELECT post_category, COUNT(*) FROM original_posts WHERE publication="eastvillage" GROUP BY post_category;
+
+How many posts appeared in each category on FGCH (greatest to least)?
+
+SELECT post_category, COUNT(*) FROM original_posts WHERE publication="fort-greene" GROUP BY post_category;
