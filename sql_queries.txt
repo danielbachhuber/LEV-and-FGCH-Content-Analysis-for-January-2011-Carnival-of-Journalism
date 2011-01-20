@@ -31,3 +31,16 @@ SELECT AVG(word_count) FROM original_posts WHERE publication="fort-greene";
 SELECT AVG(word_count) FROM original_posts WHERE publication="fort-greene" AND author_type LIKE "CUNY J-School";
 SELECT AVG(word_count) FROM original_posts WHERE publication="fort-greene" AND author_type NOT LIKE "CUNY J-School";
 
+DUMP 7
+
+On average, how many comments did each LEV post have? How many unique commenters for the time period? Who was the most prolific commenter and how many comments did they have?
+
+SELECT AVG(comment_count) FROM original_posts WHERE publication="eastvillage";
+SELECT DISTINCT COUNT(*) FROM posts_to_comments WHERE comment_link LIKE '%//eastvillage%';
+SELECT comment_author, COUNT(*) FROM posts_to_comments WHERE comment_link LIKE '%//eastvillage%' GROUP BY comment_author;
+
+On average, how many comments did each FGCH post have? How many unique commenters for the time period? Who was the most prolific commenter?
+
+SELECT AVG(comment_count) FROM original_posts WHERE publication="fort-greene";
+SELECT DISTINCT COUNT(*) FROM posts_to_comments WHERE comment_link LIKE '%//fort-greene%';
+SELECT comment_author, COUNT(*) FROM posts_to_comments WHERE comment_link LIKE '%//fort-greene%' GROUP BY comment_author;
