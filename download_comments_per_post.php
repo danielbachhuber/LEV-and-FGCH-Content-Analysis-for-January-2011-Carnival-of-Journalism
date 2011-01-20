@@ -37,12 +37,13 @@ while ( $row = mysql_fetch_assoc( $results ) ) {
 		$query = "SELECT * FROM posts_to_comments WHERE comment_link='$comment_link';";
 		$row_exists = mysql_query( $query );
 		if ( !mysql_num_rows( $row_exists ) ) {
-			$query = sprintf( "INSERT INTO posts_to_comments( post_id, comment_id, comment_author, comment_content_html, comment_content_text, comment_link ) VALUES ( $post_id, '%s', '%s', '%s', '%s', '%s' );",
+			$query = sprintf( "INSERT INTO posts_to_comments( post_id, comment_id, comment_author, comment_content_html, comment_content_text, comment_link, comment_word_count ) VALUES ( $post_id, '%s', '%s', '%s', '%s', '%s', '%s' );",
 					mysql_real_escape_string( $comment_id ),
 					mysql_real_escape_string( $comment_author ),
 					mysql_real_escape_string( $comment_content_html ),
 					mysql_real_escape_string( $comment_content_text ),
-					mysql_real_escape_string( $comment_link )
+					mysql_real_escape_string( $comment_link ),
+					str_word_count( $comment_content_text )
 				);
 			mysql_query( $query );
 			echo "Inserted entry for $comment_link\n";
